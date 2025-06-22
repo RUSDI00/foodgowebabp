@@ -7,9 +7,8 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
+    "moduleResolution": "node",  // Ganti dari 'bundler' ke 'node'
+    "resolveJsonModule": true,   // Valid jika menggunakan 'node' untuk moduleResolution
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
@@ -25,6 +24,15 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["index.tsx", "types.ts", "constants.ts", "App.tsx", "components", "hooks", "pages", "services"],
+  "include": [
+    "index.tsx",
+    "types.ts",
+    "constants.ts",
+    "App.tsx",
+    "components",
+    "hooks",
+    "pages",
+    "services"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
